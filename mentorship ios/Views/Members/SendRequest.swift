@@ -36,6 +36,7 @@ struct SendRequest: View {
         membersService.sendRequest(menteeID: menteeID, mentorID: mentorID, endDate: endDateTimestamp, notes: notes) { response in
             self.membersViewModel.inActivity = false
             self.membersViewModel.sendRequestResponseData = response
+
         }
     }
 

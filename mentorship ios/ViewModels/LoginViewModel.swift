@@ -31,8 +31,7 @@ class LoginViewModel: ObservableObject {
         appleSignInCoordinator.handleAuthorizationAppleIDButtonPress()
     }
 
-    //reset tthe login data when the view is going to disappear
-    //fix for:https://github.com/anitab-org/mentorship-ios/issues/125
+    // used to reset the login data on a successful login
     func resetLogin() {
         self.loginData = .init(username: "", password: "")
     }
